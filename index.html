@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hockey Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/eb45968083.js" crossorigin="anonymous"></script>
+  <!-- custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "hockey-primary": "#FF4240",
+            "title-color": "#131313",
+            "des-color": "#13131899",
+            "hr-color": "#13131833",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="mx-6">
+      <div class="navbar bg-base-100 my-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-hockey-primary">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold">Hockey<span class="text-hockey-primary">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-hockey-primary">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
+          <a class="btn ml-5 bg-hockey-primary py-4 px-6 text-white font-medium">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <div class="lg:relative bg-base-100 my-12 mx-6">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full max-h-[550px]" />
+          <div class="absolute block bottom-5 gap-4 text-center w-full left-0 lg:left-5 lg:flex">
+            <a href="#slide4" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide2" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/2.png" class="w-full max-h-[550px]" />
+          <div class="absolute block bottom-5 gap-4 text-center lg:flex w-full left-0 lg:left-5">
+            <a href="#slide1" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide3" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./Images/3.png" class="w-full max-h-[550px]" />
+          <div class="absolute block bottom-5 gap-4 text-center lg:flex w-full left-0 lg:left-5">
+            <a href="#slide2" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide4" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./Images/4.png" class="w-full max-h-[550px]" />
+          <div class="absolute block bottom-5 gap-4 text-center lg:flex w-full left-0 lg:left-5">
+            <a href="#slide3" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide1" class="btn btn-circle bg-[#131318] text-[#FFFFFF] border-0"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 lg:mt-0 p-4 lg:p-8 bg-[#131318] rounded-2xl lg:absolute lg:right-8 lg:bottom-8 lg:max-w-[500px]">
+        <h1 class="text-2xl text-white font-extrabold">
+          Meet all the heroes from the field
+        </h1>
+        <p class="text-[#ffffff99] font-medium mt-4">
+        Get up close and personal with the stars of our team! Join us for exclusive meet-and-greet events where you can interact with your favorite players, get autographs, and capture memorable moments. Don't miss this chance to connect with the heroes who inspire us all.
+        </p>
+      </div>
+    </div>
+  </header>
+  <main class="mx-6 px-5 lg:px-0">
+    <section class="container mx-auto">
+      <hr class="border-dashed text-hr-color border-2 mt-24 mb-8" />
+      <div class="text-center">
+        <h1 class="text-4xl font-extrabold text-[#131318]">
+          Professional Hockeys Club
+        </h1>
+        <p class="mt-6">
+        Welcome to our professional hockey club.We are passionate about hockey and dedicated to excellence. Whether you're a player, fan, or supporter, join us on our journey to success.
+        </p>
+        <hr class="border-dashed text-hr-color border-2 mt-8 mb-12" />
+      </div>
+      <div>
+        <div class="flex gap-5 flex-col lg:flex-row">
+          <div class="text-center">
+            <div class="radial-progress text-[#FF4240] " style="--value: 87; --size:10rem" role="progressbar">
+              <p class="text-[#131318] text-2xl font-extrabold">87%</p>
+            </div>
+            <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">
+              Prayer Facility
+            </h2>
+            <p class="text-des-color">
+            Our prayer facility is a peaceful space for reflection, meditation, and spiritual rejuvenation. Whether seeking solace or offering gratitude, this sacred space welcomes all.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="radial-progress text-[#49D293] " style="--value: 95; --size:10rem" role="progressbar">
+              <p class="text-[#131318] text-2xl font-extrabold">95%</p>
+            </div>
+            <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">
+              Experienced Coach
+            </h2>
+            <p class="text-des-color">
+            Our team of experienced coaches is dedicated to nurturing talent, honing skills, and fostering a winning mentality. With years of expertise and a passion for the game, they empower players to reach their full potential.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="radial-progress text-[#FFB546] " style="--value: 90; --size:10rem" role="progressbar">
+              <p class="text-[#131318] text-2xl font-extrabold">90%</p>
+            </div>
+            <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">
+              Senior Player
+            </h2>
+            <p class="text-des-color">
+            Our senior players are the backbone of the team, bringing experience, leadership, and skill to every match. With a wealth of knowledge and a relentless drive to succeed, they inspire the next generation of hockey stars.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="radial-progress text-[#4C8DF1] " style="--value: 80; --size:10rem" role="progressbar">
+              <p class="text-[#131318] text-2xl font-extrabold">80%</p>
+            </div>
+            <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">
+              Training Ground
+            </h2>
+            <p class="text-des-color">
+             Our state-of-the-art training ground is where champions are made. Equipped with top-notch facilities and expert coaching staff, it's the perfect environment for honing skills, building teamwork, and reaching peak performance.
+            </p>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="bg-gray-100 rounded-2xl justify-center mt-12">
+        <div class=" text-center pt-8">
+          <h1 class="text-2xl font-extrabold mb-4">Social Media</h1>
+        </div>
+        <div class=" flex flex-wrap justify-center p-8">
+          <i class="fab fa-facebook-f text-4xl m-4 text-gray-600"></i>
+          <i class="fab fa-twitter text-4xl m-4 text-gray-600"></i>
+          <i class="fab fa-instagram text-4xl m-4 text-gray-600"></i>
+          <i class="fab fa-linkedin-in text-4xl m-4 text-gray-600"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer
+    class="footer footer-center lg:footer-center-hide lg:text-start lg:grid-cols-3 gap-32 p-10 justify-center bg-[#131318] text-neutral-content mt-24 lg:px-32">
+    <nav>
+      <nav>
+        <header class="text-white text-2xl lg:text-3xl font-extrabold mb-2">Get In Touch</header>
+        <p class="mb-2">Have questions or suggestions? We'd love to hear from you! Reach out to us via email or social media.</p>
+        <p class="mb-2"><i class="fa-regular fa-envelope text-hockey-primary mr-4"></i> hockeys@support.com</p>
+        <p class="mb-2"><i class="fa-solid fa-phone text-hockey-primary mr-4"></i>+1 (234) 567-890</p>
+      </nav>
+    </nav>
+    <nav class="grid-cols-2 gap-32">
+      <nav>
+        <header class="text-white text-lg font-bold mb-2">Company</header>
+        <a class="link link-hover block mb-2">About us</a>
+        <a class="link link-hover block mb-2">Leadership</a>
+        <a class="link link-hover block mb-2">News & Article</a>
+        <a class="link link-hover block mb-2">Legal Notice</a>
+      </nav>
+      <nav>
+        <header class="text-white text-lg font-bold mb-2">Support</header>
+        <a class="link link-hover block mb-2">Help Center</a>
+        <a class="link link-hover block mb-2">FAQ</a>
+        <a class="link link-hover block mb-2">Ticket Support</a>
+        <a class="link link-hover block mb-2">Contact Us</a>
+      </nav>
+    </nav>
+    <nav>
+      <nav>
+        <header class="text-white text-lg font-bold mb-2">Services</header>
+        <a class="link link-hover block mb-2">Academy</a>
+        <a class="link link-hover block mb-2">Group Lesson</a>
+        <a class="link link-hover block mb-2">Private Lesson</a>
+        <a class="link link-hover block mb-2">Hockeys for kids</a>
+        <a class="link link-hover block mb-2">Hockeys for Adult</a>
+      </nav>
+    </nav>
+  </footer>
+</body>
+
+</html>
